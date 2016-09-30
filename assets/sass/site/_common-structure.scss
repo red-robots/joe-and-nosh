@@ -1,0 +1,331 @@
+
+div {
+	
+
+	/* Adds a hyphen where the word breaks, if supported (No Blink) */
+	-ms-hyphens: auto;
+	-moz-hyphens: auto;
+	-webkit-hyphens: auto;
+	hyphens: auto;
+}
+.clear {clear: both;}
+.wrapper {
+	width: 100%;
+	margin: 0px auto;
+	padding-right: 5%;
+	padding-left: 5%;
+	
+	@media screen and (min-width: $tabwidth) {
+		width: 100%;
+		float: left;
+	}
+	@media screen and (min-width: $deskwidth) {
+		
+	}
+}
+
+.content-area {
+	width: 100%;
+	margin: 0px auto;
+	
+	@media screen and (min-width: $tabwidth) {
+		width: 66%;
+		float: left;
+		margin: 0;
+	}
+	@media screen and (min-width: $deskwidth) {
+		/*width: 1200px;*/
+	}
+}
+.site-content {
+	width: 100%;
+	float: left;
+	background: {
+		image: url(images/bg-repeat.png);
+		repeat: repeat;
+	}
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.widget-area {
+	width: 100%;
+	margin: 0px auto;
+	
+	@media screen and (min-width: $tabwidth) {
+		width: 26%;
+		float: right;
+		margin: 0;
+	}
+	@media screen and (min-width: $deskwidth) {
+		/*width: 1200px;*/
+	}
+}
+.site-header {
+	width: 100%;
+	background-color: #000;
+	position: relative;
+	padding: 30px 0 50px 0;
+	float: left;
+
+	.header-swoosh {
+		width: 100%;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		min-height: 30px;
+		background: {
+			image: url(images/header-stroke.png);
+			repeat: no-repeat;
+			position: bottom;
+			size: contain;
+		}
+	}
+}
+.header-phone {
+	width: 100%;
+	text-align: center;
+	font-size: 28px;
+	color: #fff;
+	line-height: 3;
+
+	@media screen and (min-width: $tabwidth) {
+		font-size: 28px;
+		width: auto;
+		float: right;
+		margin: 50px 2% 0 0;
+	}
+}
+/* Logo */
+.logo , h1.logo {
+	width: 280px;
+	height: 180px;
+	background: {
+		image: url(images/logo.png);
+		size: cover;
+	}
+	margin: 10px auto;
+
+	@media screen and (min-width: $tabwidth) {
+		width: 300px;
+		height: 193px;
+		float: left;
+		margin: 0;
+	}
+	@media screen and (min-width: $deskwidth) {
+		/*width: 1200px;*/
+	}
+}
+.logo a, h1.logo a {
+	width: 280px;
+	height: 180px;
+	display: block;
+	text-indent: -9000px;
+
+	@media screen and (min-width: $tabwidth) {
+		width: 300px;
+		height: 193px;
+	}
+	@media screen and (min-width: $deskwidth) {
+		/*width: 1200px;*/
+	}
+}
+.footer-top {
+	width: 100%;
+	position: relative;
+	line-height: 0;
+
+	img {
+		width: 100%;
+		float: left;
+	}
+}
+footer.site-footer {
+	width: 100%;
+	background-color: #000;
+	position: relative;
+	overflow: hidden;
+	padding: 40px 0;
+
+
+}
+.foot-col {
+	color: #fff;
+	font: {
+		size: 18px;
+		weight: 300;
+	}
+
+	@media screen and (min-width: $tabwidth) {
+		font-size: 16px;
+	}
+	@media screen and (min-width: $deskwidth) {
+		font-size: 18px;
+	}
+
+	h3 {
+		margin: 0 0 5px 0;
+		font: {
+			size: 21px;
+			weight: 300;
+		}
+		
+
+		@media screen and (min-width: $tabwidth) {
+			font-size: 18px;
+		}
+		@media screen and (min-width: $deskwidth) {
+			font-size: 21px;
+		}
+	}
+	.item {
+		width: 100%;
+		float: left;
+		margin: 0 0 20px 0;
+	}
+	a {
+		color: #fff;
+	}
+	h3.center {
+		text-align: center;
+	}
+}
+.footer-col-1 {
+	width: 100%;
+	margin: 0 auto 40px auto;
+	text-align: center;
+
+	@media screen and (min-width: $tabwidth) {
+		width: 30%;
+		float: left;
+		margin: 0 3% 50px 0;
+		text-align: left;
+	}
+}
+.footer-col-2 {
+	width: 100%;
+	margin: 0 auto 40px auto;
+	text-align: center;
+	@media screen and (min-width: $tabwidth) {
+		width: 30%;
+		float: left;
+		margin: 0 0% 50px 0;
+		text-align: left;
+	}
+}
+.footer-col-3 {
+	width: 100%;
+	margin: 0 auto 40px auto;
+	text-align: center;
+	@media screen and (min-width: $tabwidth) {
+		width: 25%;
+		float: right;
+		text-align: left;
+	}
+	h3.center {
+		text-align: center;
+	}
+	.behailu {
+		width: 50%;
+		margin: 0 auto;
+		img {
+			width: 100%;
+		}
+	}
+}
+.red-swoosh	{
+	width: 100%;
+	float: left;
+	margin: 0 0 50px 0;
+	img {
+		width: 100%;
+	}
+}
+.group-start {
+	width: 100%;
+	margin: 0 0 30px 0;
+	border-bottom: 1px solid #fff;
+	@media screen and (min-width: $tabwidth) {
+		border-right: 1px solid #fff;
+		border-bottom: 0;
+		width: 24%;
+		float: left;
+	}
+	.img-center {
+		width: 80%;
+		margin: 0 auto  30px auto;
+
+		@media screen and (min-width: $tabwidth) {
+			width: 65%;
+			float: left;
+		}
+
+	}
+	h3 {
+		margin: 0 0 30px 0;
+	}
+}
+.group-item	{
+	width: 90%;
+	margin: 0 auto 30px auto;
+	@media screen and (min-width: $tabwidth) {
+		width: 24%;
+		margin: 0;
+		float: left;
+	}
+	.img-summit {
+		width: 75%;
+		margin: 0 auto 50px auto;
+		@media screen and (min-width: $tabwidth) {
+			width: 65%;
+			margin: 0 auto;
+		}
+	}
+	.img-packhouse {
+		width: 100%;
+		margin: 0 auto 50px auto;
+		@media screen and (min-width: $tabwidth) {
+			width: 100%;
+			margin: 15% auto 0 auto;
+		}
+	}
+	.img-mayo {
+		width: 75%;
+		margin: 0 auto 50px auto;
+		@media screen and (min-width: $tabwidth) {
+			width: 70%;
+			float: right;
+		}
+	}
+
+
+}
+.rollover {
+		img {
+			filter: brightness(0) invert(1);
+			&:hover {
+				filter: none;
+			}
+		}
+	}
+.social {
+	i {
+		width: auto;
+		height: auto;
+		position: relative;
+		margin: 0 15px 0 0;
+		font-size: 40px;
+		transform: scale(1);
+		@include transition(all ease .3s);
+		&:hover {
+			transform: scale(.8);
+		}
+		a {
+			display: block;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+	}
+}

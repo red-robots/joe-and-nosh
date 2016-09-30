@@ -1,0 +1,31 @@
+h1, h2, h3, h4, h5, h6 {
+	clear: both;
+	font-family: $font__title;
+}
+
+.entry-content h1 {
+	font-size: 30px;
+}
+
+h1.entry-title {
+	width: auto;
+	display: inline-block;
+	position: relative;
+	text-transform: uppercase;
+	margin: 0 0 50px 0;
+	font: {
+		weight: 300;
+		size: 30px;
+	}
+	color: $color-red;
+	&:after {
+		width: 90%;
+		content: '';
+		border-bottom: 1px solid #000;
+		position: absolute;
+		bottom: -10px;
+		left: 5%;
+		// right: 50%;
+
+	}
+}
