@@ -1439,10 +1439,10 @@ footer.site-footer{width:100%;background-color:#000;position:relative;overflow:h
 .red-swoosh img{width:100%}
 .group-start{width:100%;margin:0 0 30px 0;border-bottom:1px solid #fff}
 @media screen and (min-width:600px){.group-start{border-right:1px solid #fff;border-bottom:0;width:24%;float:left}
-}.group-start .img-center{width:80%;margin:0 auto 30px auto}
+}.group-start .img-center{width:50%;margin:0 auto 30px auto}
 @media screen and (min-width:600px){.group-start .img-center{width:65%;float:left}
 }.group-start h3{margin:0 0 30px 0}
-.group-item{width:90%;margin:0 auto 30px auto}
+.group-item{width:50%;margin:0 auto 30px auto}
 @media screen and (min-width:600px){.group-item{width:24%;margin:0;float:left}
 }.group-item .img-summit{width:75%;margin:0 auto 50px auto}
 @media screen and (min-width:600px){.group-item .img-summit{width:65%;margin:0 auto}
@@ -1479,6 +1479,7 @@ section.contact .map iframe{width:100%}
 @media screen and (min-width:600px){section.contact .contact-info{width:45%}
 }section.contact .item{width:100%;float:left;margin:0 0 20px 0;text-align:left}
 section.contact .contact-wrap{width:100%;float:left}
+section.page-contents{width:100%;text-align:center}
 .blog .format-aside .entry-title,.archive .format-aside .entry-title{display:none}
 .comment-content a{word-wrap:break-word}
 .bypostauthor{display:block}

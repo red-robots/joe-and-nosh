@@ -251,7 +251,7 @@ footer.site-footer {
 		float: left;
 	}
 	.img-center {
-		width: 80%;
+		width: 50%;
 		margin: 0 auto  30px auto;
 
 		@media screen and (min-width: $tabwidth) {
@@ -265,7 +265,7 @@ footer.site-footer {
 	}
 }
 .group-item	{
-	width: 90%;
+	width: 50%;
 	margin: 0 auto 30px auto;
 	@media screen and (min-width: $tabwidth) {
 		width: 24%;
