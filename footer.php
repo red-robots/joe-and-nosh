@@ -19,6 +19,8 @@ $instagram_link = get_field('instagram_link', 'option');
 $twitter_link = get_field('twitter_link', 'option');
 $facebook_link = get_field('facebook_link', 'option');
 $google_analytics = get_field('google_analytics', 'option');
+$sitemap = get_field('sitemap_link', 'option');
+$sitename = get_bloginfo('name');
 
 ?>
 
@@ -114,12 +116,28 @@ $google_analytics = get_field('google_analytics', 'option');
 			</div>
 			
 		</div><!-- wrapper -->
+
+		<div class="creds">
+			<?php 
+
+			
+			echo $sitename . ' - <a href="'. $sitemap . '">sitemap</a> - site by <a target="_blank" href="http://bellaworksweb.com">Bellaworks</a>';
+			 ?>
+		</div>
+
+
 	</footer><!-- #colophon -->
 
 
 </div><!-- #page -->
 
-<?php wp_footer(); ?>
+<?php 
+
+wp_footer(); 
+
+the_field('google_analytics', 'option');
+
+?>
 
 </body>
 </html>

@@ -3,17 +3,17 @@ div {
 	
 
 	/* Adds a hyphen where the word breaks, if supported (No Blink) */
-	-ms-hyphens: auto;
-	-moz-hyphens: auto;
-	-webkit-hyphens: auto;
-	hyphens: auto;
+	-ms-hyphens: none;
+	-moz-hyphens: none;
+	-webkit-hyphens: none;
+	hyphens: none;
 }
 .clear {clear: both;}
 .wrapper {
 	width: 100%;
 	margin: 0px auto;
-	padding-right: 5%;
-	padding-left: 5%;
+	padding-right: 6%;
+	padding-left: 6%;
 	
 	@media screen and (min-width: $tabwidth) {
 		width: 100%;
@@ -81,17 +81,40 @@ div {
 		}
 	}
 }
+.header-right {
+	width: 100%;
+
+	@media screen and (min-width: $tabwidth) {
+		width: auto;
+		float: right;
+	}
+	@media screen and (min-width: $largewidth) {
+		width: 600px;
+		float: right;
+	}
+}
 .header-phone {
 	width: 100%;
 	text-align: center;
-	font-size: 28px;
 	color: #fff;
 	line-height: 3;
+	font: {
+		family: $font__title;
+		weight: 300;
+		size: 28px;
+	}
+	a {color: #fff;text-decoration: none;}
 
 	@media screen and (min-width: $tabwidth) {
 		font-size: 28px;
 		width: auto;
 		float: right;
+		margin: 0px 2% 0 0;
+	}
+	@media screen and (min-width: $largewidth) {
+		margin: 50px 2% 0 0;
+	}
+	@media screen and (min-width: $deskwidth) {
 		margin: 50px 2% 0 0;
 	}
 }
@@ -106,13 +129,17 @@ div {
 	margin: 10px auto;
 
 	@media screen and (min-width: $tabwidth) {
-		width: 300px;
-		height: 193px;
+		// width: 300px;
+		// height: 193px;
+		width: 220px;
+		height: 142px;
 		float: left;
 		margin: 0;
 	}
 	@media screen and (min-width: $deskwidth) {
 		/*width: 1200px;*/
+		width: 280px;
+		height: 180px;
 	}
 }
 .logo a, h1.logo a {
@@ -122,11 +149,15 @@ div {
 	text-indent: -9000px;
 
 	@media screen and (min-width: $tabwidth) {
-		width: 300px;
-		height: 193px;
+		// width: 300px;
+		// height: 193px;
+		width: 220px;
+		height: 142px;
 	}
 	@media screen and (min-width: $deskwidth) {
 		/*width: 1200px;*/
+		width: 280px;
+		height: 180px;
 	}
 }
 .footer-top {
@@ -141,12 +172,35 @@ div {
 }
 footer.site-footer {
 	width: 100%;
-	background-color: #000;
+	background-color: #050708;
 	position: relative;
 	overflow: hidden;
 	padding: 40px 0;
 
 
+}
+.creds {
+	color: rgba(255,255,255,.7);
+	width: 100%;
+	margin: 30px 0 10px 0;
+	float: left;
+	text-align: center;
+	font: {
+		size: 16px;
+		font-family: $font__main;
+	}
+	a {
+		color: rgba(255,255,255,.7);
+		text-decoration: none;
+		@include transition(all ease .3s);
+
+		&:hover {
+			color: rgba(255,255,255,1);
+		}
+	}
+}
+section.sitemap {
+	text-align: left;
 }
 .foot-col {
 	color: #fff;
@@ -166,9 +220,9 @@ footer.site-footer {
 		margin: 0 0 5px 0;
 		font: {
 			size: 21px;
-			weight: 300;
+			weight: 400;
 		}
-		
+		letter-spacing: 3px;
 
 		@media screen and (min-width: $tabwidth) {
 			font-size: 18px;
@@ -180,7 +234,11 @@ footer.site-footer {
 	.item {
 		width: 100%;
 		float: left;
-		margin: 0 0 20px 0;
+		margin: 0 0 50px 0;
+
+		@media screen and (min-width: $tabwidth) {
+			margin: 0 0 20px 0;
+		}
 	}
 	a {
 		color: #fff;
@@ -197,7 +255,7 @@ footer.site-footer {
 	@media screen and (min-width: $tabwidth) {
 		width: 30%;
 		float: left;
-		margin: 0 3% 50px 0;
+		margin: 0 8% 50px 0;
 		text-align: left;
 	}
 }
@@ -277,7 +335,7 @@ footer.site-footer {
 		margin: 0 auto 50px auto;
 		@media screen and (min-width: $tabwidth) {
 			width: 65%;
-			margin: 0 auto;
+			margin: 15% auto  0 auto;
 		}
 	}
 	.img-packhouse {
@@ -285,7 +343,7 @@ footer.site-footer {
 		margin: 0 auto 50px auto;
 		@media screen and (min-width: $tabwidth) {
 			width: 100%;
-			margin: 15% auto 0 auto;
+			margin: 35% auto 0 auto;
 		}
 	}
 	.img-mayo {
@@ -294,6 +352,7 @@ footer.site-footer {
 		@media screen and (min-width: $tabwidth) {
 			width: 70%;
 			float: right;
+			margin: 14% auto 50px auto;
 		}
 	}
 

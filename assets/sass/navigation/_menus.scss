@@ -4,15 +4,28 @@
 	float: left;
 	width: 100%;
 	text-align: center;
+	font: {
+		family: $font__title;
+		weight: 300;
+	}
+
 
 	@media screen and (min-width: $tabwidth) {
+		
+		margin: 20px 0% 0 0;
+	}
+	@media screen and (min-width: $midwidth) {
+		
+		margin: 20px 0% 0 0;
+	}
+	@media screen and (min-width: $largewidth) {
 		clear: none;
 		width: auto;
 		float: right;
-		margin: 50px 5% 0 0;
+		margin: 50px 0% 0 0;
 	}
 	@media screen and (min-width: $deskwidth) {
-		margin: 50px 5% 0 0;
+		margin: 50px 0% 0 0;
 	}
 
 	ul {
@@ -69,12 +82,31 @@
 
 		@media screen and (min-width: $tabwidth) {
 			width: auto;
-			margin: 0px 10px;
-			font-size: 28px;
+			margin: 0px 20px 0px 0px;
+			font-size: 18px;
+			display: inline-block;
+		}
+		@media screen and (min-width: $largephone) {
+			width: auto;
+			margin: 0px 20px 0px 0px;
+			font-size: 18px;
 			float: left;
+		}
+		@media screen and (min-width: $midwidth) {
+			font-size: 26px;
+			margin: 0px 20px 0px 0px;
+		}
+		@media screen and (min-width: $largewidth) {
+			font-size: 28px;
+			margin: 0px 35px 0px 0px;
+		}
+		@media screen and (min-width: $xlargewidth) {
+			font-size: 28px;
+			margin: 0px 35px 0px 0px;
 		}
 		@media screen and (min-width: $deskwidth) {
 			font-size: 28px;
+			margin: 0px 35px 0px 0px;
 		}
 
 		&:hover > a,

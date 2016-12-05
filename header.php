@@ -32,6 +32,8 @@ $phone = get_field('phone', 'option');
 
 	<header id="masthead" class="site-header" role="banner">
 		<div class="wrapper">
+
+		
 			
 			<?php if(is_home()) { ?>
 	            <h1 class="logo">
@@ -43,12 +45,16 @@ $phone = get_field('phone', 'option');
 	            </div>
 	        <?php } ?>
 
+	        <div class="header-right">
+
 	        <div class="header-phone"><?php echo $phone; ?></div>
 
 			<nav id="site-navigation" class="main-navigation" role="navigation">
 				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'MENU', 'acstarter' ); ?></button>
 				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 			</nav><!-- #site-navigation -->
+
+			</div><!-- header right  -->
 	</div><!-- wrapper -->
 		<div class="header-swoosh"></div>
 	</header><!-- #masthead -->
