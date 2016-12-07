@@ -21,6 +21,11 @@ $facebook_link = get_field('facebook_link', 'option');
 $google_analytics = get_field('google_analytics', 'option');
 $sitemap = get_field('sitemap_link', 'option');
 $sitename = get_bloginfo('name');
+// Site links
+$packhouse = get_field('packhouse', 'option');
+$summitRoom = get_bloginfo('summit_room', 'option');
+$mayoBird = get_bloginfo('mayo_bird', 'option');
+$treehouse = get_bloginfo('treehouse_kitchen', 'option');
 
 ?>
 
@@ -87,7 +92,7 @@ $sitename = get_bloginfo('name');
 				<div class="img-center">
 					<h3 class="center">A PART OF</h3>
 					<div class="rollover">
-						<a href="#">
+						<a target="_blank" href="<?php echo $treehouse; ?>">
 							<img alt="Tree House Kitchen" title="Tree House Kitchen" src="<?php bloginfo('template_url'); ?>/images/tree-house-kitchen.png">
 						</a>
 					</div><!-- roll over -->
@@ -95,21 +100,21 @@ $sitename = get_bloginfo('name');
 			</section>
 			<div class="group-item">
 				<div class="img-summit rollover">
-					<a href="#">
+					<a target="_blank" href="<?php echo $summitRoom; ?>">
 						<img alt="Summit Room" title="Summit Room" src="<?php bloginfo('template_url'); ?>/images/summit-room.png">
 					</a>
 				</div>
 			</div>
 			<div class="group-item ">
 				<div class="img-packhouse rollover">
-					<a href="#">
+					<a target="_blank" href="<?php echo $packhouse; ?>">
 						<img alt="Packhouse" title="Packhouse" src="<?php bloginfo('template_url'); ?>/images/packhouse.png">
 					</a>
 				</div>
 			</div>
 			<div class="group-item ">
 				<div class="img-mayo rollover">
-					<a href="#">
+					<a target="_blank" href="<?php echo $mayoBird; ?>">
 						<img alt="Mayobird" title="Mayobird" src="<?php bloginfo('template_url'); ?>/images/mayobird.png">
 					</a>
 				</div>
