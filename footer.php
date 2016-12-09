@@ -23,9 +23,9 @@ $sitemap = get_field('sitemap_link', 'option');
 $sitename = get_bloginfo('name');
 // Site links
 $packhouse = get_field('packhouse', 'option');
-$summitRoom = get_bloginfo('summit_room', 'option');
-$mayoBird = get_bloginfo('mayo_bird', 'option');
-$treehouse = get_bloginfo('treehouse_kitchen', 'option');
+$summitRoom = get_field('summit_room', 'option');
+$mayoBird = get_field('mayo_bird', 'option');
+$treehouse = get_field('treehouse_kitchen', 'option');
 
 ?>
 
