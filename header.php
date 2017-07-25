@@ -19,6 +19,12 @@
 <link href="https://fonts.googleapis.com/css?family=Oswald:300,400" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Raleway:300,400" rel="stylesheet">
 
+<link rel="apple-touch-icon" sizes="180x180" href="<?php bloginfo( 'template_url' ); ?>/images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="<?php bloginfo( 'template_url' ); ?>/images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="<?php bloginfo( 'template_url' ); ?>/images/favicon-16x16.png">
+<link rel="manifest" href="<?php bloginfo( 'template_url' ); ?>/images/manifest.json">
+<meta name="theme-color" content="#ffffff">
+
 <?php wp_head(); 
 
 $phone = get_field('phone', 'option');
