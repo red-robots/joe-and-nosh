@@ -69,7 +69,7 @@ $treehouse = get_field('treehouse_kitchen', 'option');
 					<h3>GIVE US A CALL</h3>
 					<?php echo '(p) ' . $phone; ?>
 					<br>
-					<?php echo '(e) <a href="'. $spam . '">' . $spam . '</a>'; ?>
+					<?php echo '(e) <a href="mailto:'. $spam . '">' . $spam . '</a>'; ?>
 				</div>
 				
 			</section>
